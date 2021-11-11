@@ -1,0 +1,12 @@
+.beerlist {
+  padding: 0;
+
+  .beerlist_filter {
+    background-color: rgb(100, 100, 185);
+    padding: 10px 50px 20px 50px;
+  }
+
+  & > * {
+    padding: 0px 50px;
+  }
+}
