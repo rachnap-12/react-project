@@ -5,7 +5,8 @@ const CardList = (props) => {
 
     const {beerList} = props;
 //     const { beersArr } = props;
-//     console.log(beersArr);
+    console.log("In Card List");
+    // console.log(beersArr);
 
 const beerDisplay = beerList.map((beer,index) => (
     <img className="card-list_img" key={index} src={beer.image_url} alt={beer.name} /> 

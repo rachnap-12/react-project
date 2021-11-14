@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import beers from './data/beers'
 
-import ExploreBeers from "./container/ExploreBeers/ExploreBeers"
+import ExploreBeers from "./container/ExploreBeers/ExploreBeers";
+import FilterItems from "./container/FilterItems/FilterItems";
 
 import "./App.scss";
 
@@ -29,6 +30,11 @@ const App = () => {
     <section className="searchBeer">
     <h2>Search</h2>
     {beer && <ExploreBeers beerList = {beer} /> }
+    </section>
+
+    <section className="filterBeer">
+    <h2>Filter</h2>
+    {beer && <FilterItems beerList = {beer} /> }
     </section>
   </>
   )
